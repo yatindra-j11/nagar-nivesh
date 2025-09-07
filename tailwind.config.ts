@@ -22,6 +22,18 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+        },
+        civic: {
+          green: "hsl(var(--civic-green))",
+          "green-foreground": "hsl(var(--civic-green-foreground))",
+          "green-hover": "hsl(var(--civic-green-hover))",
+        },
+        status: {
+          pending: "hsl(var(--status-pending))",
+          "in-progress": "hsl(var(--status-in-progress))",
+          resolved: "hsl(var(--status-resolved))",
+          urgent: "hsl(var(--status-urgent))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
