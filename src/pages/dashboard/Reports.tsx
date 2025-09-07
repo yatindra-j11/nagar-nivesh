@@ -253,10 +253,8 @@ const Reports = () => {
                         value={report.status}
                         onValueChange={(value) => updateStatus(report.id, value)}
                       >
-                        <SelectTrigger asChild>
-                          <Button variant="outline" size="sm">
-                            <Edit className="h-3 w-3" />
-                          </Button>
+                        <SelectTrigger className="h-8 px-3">
+                          Update
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="pending">Pending</SelectItem>
