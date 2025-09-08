@@ -1,9 +1,9 @@
 import React from 'react';
 import { Outlet, Navigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { DashboardSidebar } from './DashboardSidebar';
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
-import { Button } from '@/components/ui/button';
+import { useAuth } from '@/contexts/AuthContext.jsx';
+import { DashboardSidebar } from './DashboardSidebar.jsx';
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar.jsx';
+import { Button } from '@/components/ui/button.jsx';
 import { LogOut, User } from 'lucide-react';
 
 const DashboardLayout = () => {

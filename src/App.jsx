@@ -1,14 +1,14 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { AuthProvider } from "@/contexts/AuthContext";
-import Login from "./pages/Login";
-import DashboardLayout from "./components/layout/DashboardLayout";
-import Overview from "./pages/dashboard/Overview";
-import Reports from "./pages/dashboard/Reports";
-import MapView from "./pages/dashboard/MapView";
-import Analytics from "./pages/dashboard/Analytics";
-import Settings from "./pages/dashboard/Settings";
-import NotFound from "./pages/NotFound";
+import { AuthProvider } from "@/contexts/AuthContext.jsx";
+import Login from "./pages/Login.jsx";
+import DashboardLayout from "./components/layout/DashboardLayout.jsx";
+import Overview from "./pages/dashboard/Overview.jsx";
+import Reports from "./pages/dashboard/Reports.jsx";
+import MapView from "./pages/dashboard/MapView.jsx";
+import Analytics from "./pages/dashboard/Analytics.jsx";
+import Settings from "./pages/dashboard/Settings.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const queryClient = new QueryClient();
 
