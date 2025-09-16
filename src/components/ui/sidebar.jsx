@@ -2,6 +2,7 @@ import React, { createContext, useContext, useMemo, useState } from "react";
 import { cn } from "@/lib/utils.js";
 import { Slot } from "@radix-ui/react-slot";
 import { PanelLeft } from "lucide-react";
+import { cva } from "class-variance-authority";
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
