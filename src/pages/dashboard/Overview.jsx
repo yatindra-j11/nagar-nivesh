@@ -154,10 +154,10 @@ const Overview = () => {
             ].map((activity, index) => (
               <div key={index} className="flex items-start space-x-3">
                 <div className={`rounded-full p-1 ${
-                  activity.urgent ? 'bg-status-urgent/10' : 'bg-primary/10'
+                  activity.urgent ? 'bg-destructive/10' : 'bg-primary/10'
                 }`}>
                   {activity.urgent ? (
-                    <AlertTriangle className="h-3 w-3 text-status-urgent" />
+                    <AlertTriangle className="h-3 w-3 text-destructive" />
                   ) : (
                     <Calendar className="h-3 w-3 text-primary" />
                   )}
@@ -190,8 +190,8 @@ const Overview = () => {
                   <div className="flex items-center space-x-2 mt-1">
                     <span className={`text-xs px-2 py-1 rounded-full ${
                       item.priority === 'High' 
-                        ? 'bg-status-urgent/10 text-status-urgent' 
-                        : 'bg-status-pending/10 text-status-pending'
+                        ? 'bg-destructive/10 text-destructive' 
+                        : 'bg-secondary/50 text-muted-foreground'
                     }`}>
                       {item.priority}
                     </span>
